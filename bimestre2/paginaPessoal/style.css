@@ -139,7 +139,7 @@ nav ul li a:hover {
 /* Seção educação */
 #educacao {
     padding: 40px 20px;
-    background-color: var(--cor-secundaria); /* Cor secundária */
+    background-color: var(--cor-secundaria); /* Cor secundaria */
 }
 
 #educacao h2 {
