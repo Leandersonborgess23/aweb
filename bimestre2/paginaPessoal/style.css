@@ -139,7 +139,7 @@ nav ul li a:hover {
 /* Seção educação */
 #educacao {
     padding: 40px 20px;
-    background-color: var(--cor-secundaria); /* Cor secundaria */
+    background-color: var(--cor-destaque); /* Cor secundaria */
 }
 
 #educacao h2 {
@@ -160,8 +160,9 @@ table th, table td {
 }
 
 table th {
-    background-color: var(--cor-principal); /* Cor principal */
+    background-color: var(--cor-secundaria); /* Cor principal */
     color: white;
+    border: 50%;
 }
 
 table tr:nth-child(even) {
@@ -244,17 +245,4 @@ table tr:nth-child(even) {
 
 #contato a:hover {
     text-decoration: underline;
-}
-
-/* Ajuste de responsividade para telas menores */
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 40px); /* 2 cards por linha */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 100%; /* 1 card por linha */
-    }
 }
