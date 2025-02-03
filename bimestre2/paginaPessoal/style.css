@@ -1,4 +1,4 @@
-/* Definição das cores principais */
+/* Paleta de cores */
 :root {
     --cor-principal: #8C472E; /* Cor principal */
     --cor-secundaria: #444359; /* Cor secundária */
@@ -71,29 +71,43 @@ nav ul li a:hover {
 #sobre-mim {
     padding: 100px 20px 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
-#sobre-mim h2 {
+.hero { 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 850px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hero h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#sobre-mim img {
+.hero img {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    margin-top: 20px;
     transition: transform 0.3s ease;
 }
 
-#sobre-mim img:hover {
+.hero img:hover {
     transform: scale(1.1); /* efeito de zoom na imagem */
 }
 
-#sobre-mim p {
+.hero p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Seção curiosidades */
@@ -108,10 +122,12 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-bottom: 20px;
+    margin-top: 20px;
     width: calc(33% - 40px); /* 3 cards por linha */
     display: inline-block;
     vertical-align: top;
-    margin-right: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .card img {
