@@ -62,8 +62,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--cor-destaque); /* Cor de destaque no hover */
-    padding-bottom: 8px; /* efeito de destaque no hover */
+    color: var(--cor-destaque); 
+    padding-bottom: 8px; 
     border-bottom: 2px solid var(--cor-destaque);
 }
 
@@ -155,7 +155,7 @@ nav ul li a:hover {
 /* Seção educação */
 #educacao {
     padding: 40px 20px;
-    background-color: var(--cor-destaque); /* Cor secundaria */
+    background-color: var(--cor-destaque);
 }
 
 #educacao h2 {
@@ -179,7 +179,7 @@ table th, table td {
 }
 
 table th {
-    background-color: var(--cor-secundaria); /* Cor principal */
+    background-color: var(--cor-secundaria); 
     color: white;
     border: 50%;
 }
@@ -259,23 +259,27 @@ table tr:nth-child(even) {
 /* Seção contato */
 #contato {
     padding: 40px 20px;
-    background-color: var(--cor-principal); /* Cor principal */
-    color: white;
-    text-align: center;
+    background-color: var(--cor-principal); 
+    color: var(--cor-destaque);
+    text-align: justify;
 }
 
 #contato h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #contato p {
     font-size: 1.1rem;
-    margin: 10px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 #contato a {
-    color: var(--cor-destaque); /* Cor de destaque */
+    color: var(--cor-destaque); 
     text-decoration: none;
 }
 
