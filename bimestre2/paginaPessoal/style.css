@@ -208,35 +208,52 @@ table tr:nth-child(even) {
 
 /* Seção habilidades */
 #habilidades {
-    padding: 40px 20px;
+    padding: 100px 20px 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
-#habilidades h2 {
+.habilidades { 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 850px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.habilidades h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-#habilidades img {
+.habilidades img {
     width: 200px;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
-#habilidades img:hover {
+.habilidades img:hover {
     transform: scale(1.1); /* efeito de zoom nas imagens */
 }
 
-#habilidades ul {
+.habilidades ul {
     list-style: none;
     padding: 0;
 }
 
-#habilidades li {
+.habilidades li {
     font-size: 1.1rem;
-    margin: 10px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
 }
 
 /* Seção contato */
