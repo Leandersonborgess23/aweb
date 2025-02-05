@@ -267,6 +267,7 @@ table tr:nth-child(even) {
     width: 850px;
     display: inline-block;
     vertical-align: top;
+    padding: 20px;
 }
 
 .habilidades h2 {
@@ -276,7 +277,8 @@ table tr:nth-child(even) {
 
 .habilidades img {
     width: 200px;
-    height: auto;
+    height: 300px;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
