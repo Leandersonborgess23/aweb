@@ -231,7 +231,19 @@ table tr:nth-child(even) {
     margin-bottom: 20px;
 }
 
-#causos p {
+.causos { 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 850px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.causos p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
