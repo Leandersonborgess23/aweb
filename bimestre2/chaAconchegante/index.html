@@ -1,128 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tea Cozy</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/img-tea-cozy-logo.png" alt="Tea Cozy Logo">
+            <img src="img-tea-cozy-logo.png" alt="Tea Cozy Logo">
         </div>
-        <h1>Tea Cozy: Uma experiência de chá única</h1>
         <nav>
             <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#featured">Featured Tea</a></li>
+                <li><a href="#locations">Locations</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="hero">
-        <h2>Desfrute dos melhores chás do mundo</h2>
-        <p>O melhor em cada xícara! Venha conhecer os sabores e aromas de nossas bebidas exclusivas.</p>
+   
+    <section id="mission" class="banner">
+        <div class="overlay">
+            <h2>Our Mission</h2>
+            <h4>Handpicked, Artisanally, Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+        </div>
     </section>
-
-    <section id="sobre">
-        <h2>Sobre o Tea Cozy</h2>
-        <p>O Tea Cozy é o lugar perfeito para você explorar a arte de apreciar chá. Desde chás clássicos até blends exclusivos, oferecemos uma experiência única para os apreciadores dessa bebida milenar.</p>
-    </section>
-
-    <section id="cardapio">
-        <h2>Nosso Cardápio</h2>
-        <div class="cardapio-lista">
-            <div class="cardapio-item">
-                <img src="img/img-bedford-bizarre.jpg" alt="Bedford Bizarre">
-                <h3>Bedford Bizarre</h3>
-                <p>Uma mistura exótica de chá preto com um toque de especiarias. Perfeito para quem gosta de algo diferente.</p>
-                <span>R$ 15,00</span>
+   
+    <section id="featured">
+        <h2>Tea of The Month</h2>
+        <h3>What's Steeping at The Tea Cozy?</h3>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="img-bedford-bizarre.jpg" alt="Bedford Bizarre">
+                <h3>Bedford Bizarre Tea</h3>
             </div>
-            <div class="cardapio-item">
-                <img src="img/img-berryblitz.jpg" alt="Berry Blitz">
-                <h3>Berry Blitz</h3>
-                <p>Blend de frutas vermelhas com chá verde, criando uma explosão de sabor.</p>
-                <span>R$ 18,00</span>
+            <div class="product">
+                <img src="img-berryblitz.jpg" alt="Berry Blitz">
+                <h3>Fall Berry Blitz Tea</h3>
             </div>
-            <div class="cardapio-item">
-                <img src="img/img-donut.jpg" alt="Donut">
-                <h3>Donut</h3>
-                <p>Chá preto aromatizado com notas de baunilha e açúcar, um verdadeiro deleite.</p>
-                <span>R$ 16,00</span>
-            </div>        
-            <div class="cardapio-item">
-                <img src="img/img-locations-background.jpg" alt="Locations">
-                <h3>Locations</h3>
-                <p>Uma mistura de chá preto com especiarias, trazendo um sabor quente e acolhedor.</p>
-                <span>R$ 14,00</span>
+            <div class="product">
+                <img src="img-donut.jpg" alt="Donut">
+                <h3>Seasonal Donut</h3>
             </div>
-            <div class="cardapio-item">
-                <img src="img/img-mission-background.webp" alt="Background">
-                <h3>Background</h3>
-                <p>Chá com um toque de frutas tropicais e notas sutis de canela.</p>
-                <span>R$ 13,00</span>
+            <div class="product">
+                <img src="img-spiced-rum.webp" alt="Spiced Rum">
+                <h3>Spiced Rum Tea</h3>
             </div>
-            <div class="cardapio-item">
-                <img src="img/img-myrtle-ave.jpg" alt="Myrtle Ave">
-                <h3>Myrtle Ave</h3>
-                <p>Chá verde com hortelã fresca, refrescante e revigorante.</p>
-                <span>R$ 16,00</span>
-            </div>
-            <div class="cardapio-item">
-                <img src="img/img-spiced-rum.webp" alt="Spiced Rum">
-                <h3>Spiced Rum</h3>
-                <p>Chá com rum e especiarias, perfeito para uma experiência inusitada e exótica.</p>
-                <span>R$ 20,00</span>
+            <div class="product">
+                <img src="img-donut.jpg" alt="Spiced Rum">
+                <h3>Myrtle Ave Tea</h3>
             </div>
         </div>
     </section>
-
-    <section id="beneficios">
-        <h2>Benefícios do Chá</h2>
-        <div class="beneficio-lista">
-            <div class="beneficio-item">
-                <h3>Relaxamento</h3>
-                <p>Chás como o de camomila são perfeitos para quem busca tranquilidade e um bom descanso.</p>
+   
+    <section id="locations">
+        <h2>Locations</h2>
+        <div class="locations-container">
+            <div class="location">
+                <h3>Downtown</h3>
+                <p>384 West 4th St<br>Suite 108<br>Portland, Maine</p>
             </div>
-            <div class="beneficio-item">
-                <h3>Saúde</h3>
-                <p>Com propriedades antioxidantes, muitos chás ajudam a melhorar o sistema imunológico.</p>
+            <div class="location">
+                <h3>East Bayside</h3>
+                <p>3433 Phinsherman's Avenue<br>(Northwest Corner)<br>Portland, Maine</p>
             </div>
-            <div class="beneficio-item">
-                <h3>Energia</h3>
-                <p>Chás como o de matcha oferecem uma dose de energia sem a sobrecarga da cafeína.</p>
+            <div class="location">
+                <h3>Oakdale</h3>
+                <p>515 Crescent Avenue<br>Second Floor<br>Portland, Maine</p>
             </div>
         </div>
     </section>
+   
+    <section id="contact">
+        <h2>The Tea Cozy</h2>
+        <div class="contact">
+            <h5>contact@theteacozy.com<br> 917-555-8904</h5>
+        </div>
 
-    <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p>Tem alguma dúvida ou gostaria de saber mais sobre nossos chás? Envie-nos uma mensagem!</p>
-        <form action="">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
     </section>
-
+    
     <footer>
-        <p>&copy; 2025 Tea Cozy. Todos os direitos reservados.</p>
-    </footer>
+        <p class="copyright">copyright The Tea Cozy 2017</p>
 </body>
 </html>

@@ -1,288 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600&family=Lato:wght@400;700&display=swap');
-
-* {
+css:
+body {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif; 
-}
-
-body {
-    background-color: #f0f0f0; 
-    color: #333;
-    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid seashell;
+    background-color: rgb(0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 69px;
 }
 
-header .logo {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-
-header .logo img {
-    width: 60px;
-    height: auto;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-top: 50px;
+.logo img {
+    height: 50px;
 }
 
 nav ul {
+    list-style: none;
+    display: flex;
+    gap: 69px;  
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: seashell;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.banner {
+    background: url('img-mission-background.webp') center/cover no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid seashell;
+}
+
+.overlay {
+    background-color: black;
+    padding: 20px;
+    width: 1400px;
+}
+
+h2 {    
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.product-gallery {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#hero {
-    background: url('img-locations-background.jpg') no-repeat center center/cover;
-    color: #4CAF50;
-    padding: 80px 0;
-    text-align: center;
-    margin-bottom: 80px; /
-}
-
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-#sobre {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    margin-bottom: 80px; 
-}
-
-#sobre h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-#sobre p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#cardapio {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-    margin-bottom: 50px; 
-}
-
-#cardapio h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.cardapio-lista {
-    display: flex;
-    justify-content: space-around;
+    gap: 10px;
     flex-wrap: wrap;
-    gap: 40px;
+    padding: 50px;
+
 }
 
-.cardapio-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 50px;
-    width: calc(33% - 40px); 
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 35px;
-    margin-right: 35px;
-}
-
-.cardapio-item img {
-    width: 100%;
+.product img {
+    width: 300px;
     height: 200px;
     object-fit: cover;
-}
-
-.cardapio-item h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-.cardapio-item p {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #555;
-}
-
-.cardapio-item span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #4CAF50;
-    margin-top: 15px;
-}
-
-.cardapio-item img:hover {
-    transform: scale(1.1); 
-}
-
-.cardapio-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    filter: brightness(1.1); 
-}
-
-
-#beneficios {
-    background-color: #e0f7e0;
-    padding: 60px 20px;
-    margin-bottom: 80px; 
-}
-
-#beneficios h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.beneficio-lista {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.beneficio-item {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.beneficio-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.beneficio-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-#contato {
-    background-color: #fff;
-    padding: 60px 20px;
-    margin-bottom: 80px; 
-}
-
-#contato h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#contato p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 50px;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 30px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 25px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: #45a049;
+.locations-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 65px;
+    margin-right: 65px;
+    padding: 50px;
+    background: url('img-locations-background.jpg') center/cover no-repeat;
+    height: 500px;
+    align-items: center;
 }
+
+.location {
+    background-color:black;
+    padding: 20px;
+    width: 300px;
+    opacity: 1;
+    height: 200px;
+    
+}
+
+.contact{
+        height: 200px;     
+}
+
+
 
 footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: black;
 }
 
 footer p {
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .cardapio-lista,
-    .beneficio-lista {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cardapio-item,
-    .beneficio-item {
-        width: 90%;
-        margin-bottom: 30px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+    text-align: left;
 }
