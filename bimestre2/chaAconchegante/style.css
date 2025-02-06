@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f0f0f0; /* Mudando a cor de fundo para um cinza claro */
+    background-color: #f0f0f0; 
     color: #333;
     line-height: 1.6;
 }
@@ -18,7 +18,7 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    margin-bottom: 60px; /* Aumentei o espaçamento entre o header e as próximas seções */
+    margin-bottom: 60px;
 }
 
 header .logo {
@@ -64,7 +64,7 @@ nav ul li a:hover {
     color: #4CAF50;
     padding: 80px 0;
     text-align: center;
-    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção hero e as próximas divs */
+    margin-bottom: 80px; /
 }
 
 #hero h2 {
@@ -76,7 +76,7 @@ nav ul li a:hover {
     background-color: #fff;
     padding: 60px 20px;
     text-align: center;
-    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção sobre e as próximas divs */
+    margin-bottom: 80px; 
 }
 
 #sobre h2 {
@@ -94,7 +94,7 @@ nav ul li a:hover {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
-    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção cardápio e as próximas divs */
+    margin-bottom: 50px; 
 }
 
 #cardapio h2 {
@@ -150,7 +150,7 @@ nav ul li a:hover {
 #beneficios {
     background-color: #e0f7e0;
     padding: 60px 20px;
-    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção benefícios e as próximas divs */
+    margin-bottom: 80px; 
 }
 
 #beneficios h2 {
@@ -188,7 +188,7 @@ nav ul li a:hover {
 #contato {
     background-color: #fff;
     padding: 60px 20px;
-    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção contato e as próximas divs */
+    margin-bottom: 80px; 
 }
 
 #contato h2 {
