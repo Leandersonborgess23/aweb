@@ -89,7 +89,7 @@ h4 {
     margin-left: 65px;
     margin-right: 65px;
     padding: 50px;
-    background: url('img-locations-background.jpg') center/cover no-repeat;
+    background: url('img/img-locations-background.jpg');
     height: 500px;
     align-items: center;
 }
