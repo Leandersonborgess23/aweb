@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f0f0f0; /* Mudando a cor de fundo para um cinza claro */
     color: #333;
     line-height: 1.6;
 }
@@ -18,7 +18,7 @@ header {
     color: white;
     padding: 1rem 0;
     text-align: center;
-    position: relative;
+    margin-bottom: 60px; /* Aumentei o espaçamento entre o header e as próximas seções */
 }
 
 header .logo {
@@ -35,13 +35,13 @@ header .logo img {
 header h1 {
     font-size: 2rem;
     margin-top: 50px;
-    font-family: 'Poppins', sans-serif; 
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 nav ul li {
@@ -64,57 +64,50 @@ nav ul li a:hover {
     color: #4CAF50;
     padding: 80px 0;
     text-align: center;
+    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção hero e as próximas divs */
 }
 
 #hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-family: 'Inter', sans-serif; 
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-family: 'Lato', sans-serif; 
+    margin-bottom: 30px;
 }
 
 #sobre {
     background-color: #fff;
     padding: 60px 20px;
     text-align: center;
+    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção sobre e as próximas divs */
 }
 
 #sobre h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    font-family: 'Inter', sans-serif; 
+    margin-bottom: 30px;
 }
 
 #sobre p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif; 
 }
 
 #cardapio {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
+    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção cardápio e as próximas divs */
 }
 
 #cardapio h2 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Inter', sans-serif; 
+    margin-bottom: 40px;
 }
 
 .cardapio-lista {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .cardapio-item {
@@ -122,44 +115,29 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     width: calc(33% - 40px); 
     display: inline-block;
     vertical-align: top;
     margin-left: 35px;
     margin-right: 35px;
-    transition: transform 0.3s ease, box-shadow 0.3s, filter 0.3s;
 }
 
 .cardapio-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.cardapio-item img:hover {
-    transform: scale(1.1); 
-}
-
-.cardapio-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    filter: brightness(1.1); 
 }
 
 .cardapio-item h3 {
     font-size: 1.5rem;
     margin-top: 10px;
-    font-family: 'Poppins', sans-serif; 
 }
 
 .cardapio-item p {
     font-size: 1rem;
     margin-top: 10px;
     color: #555;
-    font-family: 'Lato', sans-serif; 
 }
 
 .cardapio-item span {
@@ -172,19 +150,19 @@ nav ul li a:hover {
 #beneficios {
     background-color: #e0f7e0;
     padding: 60px 20px;
+    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção benefícios e as próximas divs */
 }
 
 #beneficios h2 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Inter', sans-serif; /* Fonte específica para h2 */
+    margin-bottom: 40px;
 }
 
 .beneficio-lista {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -194,37 +172,35 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 280px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .beneficio-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif; 
 }
 
 .beneficio-item p {
     font-size: 1rem;
     color: #555;
-    font-family: 'Lato', sans-serif; 
 }
 
 #contato {
     background-color: #fff;
     padding: 60px 20px;
+    margin-bottom: 80px; /* Aumentei o espaçamento entre a seção contato e as próximas divs */
 }
 
 #contato h2 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Inter', sans-serif; 
+    margin-bottom: 40px;
 }
 
 #contato p {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 40px;
-    font-family: 'Lato', sans-serif; 
+    margin-bottom: 50px;
 }
 
 form {
@@ -233,7 +209,7 @@ form {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group label {
@@ -270,12 +246,11 @@ footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 footer p {
     font-size: 1rem;
-    font-family: 'Lato', sans-serif; 
 }
 
 @media (max-width: 768px) {
@@ -288,7 +263,7 @@ footer p {
     .cardapio-item,
     .beneficio-item {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     nav ul {
