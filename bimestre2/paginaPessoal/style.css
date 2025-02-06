@@ -90,15 +90,15 @@ nav ul li a:hover {
     font-size: 3rem;
     margin: 0;
     position: absolute;
-    top: 150px;
-    left: 20px; /* Alinha o título à esquerda */
-    line-height: 1.2; /* Ajuste a altura da linha para melhor espaçamento */
-    color: var(--cor-principal); /* Cor do texto */
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.7); /* Sombra para destacar o título */
-    font-family: 'Cinzel', serif; /* Fonte elegante para o título */
-    letter-spacing: 3px; /* Aumenta o espaçamento entre as letras */
-    text-transform: uppercase; /* Transforma o texto para maiúsculas */
-    animation: glow 1.5s ease-in-out infinite alternate; /* Animação de brilho */
+    top: 230px;
+    left: 100px;
+    line-height: 1.2;
+    color: var(--cor-principal); 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.7); 
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 /* Animação de brilho */
