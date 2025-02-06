@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600&family=Lato:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif; 
 }
 
 body {
@@ -33,6 +35,7 @@ header .logo img {
 header h1 {
     font-size: 2rem;
     margin-top: 50px;
+    font-family: 'Poppins', sans-serif; 
 }
 
 nav ul {
@@ -66,11 +69,13 @@ nav ul li a:hover {
 #hero h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; 
 }
 
 #hero p {
     font-size: 1.2rem;
     margin-top: 10px;
+    font-family: 'Lato', sans-serif; 
 }
 
 #sobre {
@@ -82,12 +87,14 @@ nav ul li a:hover {
 #sobre h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    font-family: 'Inter', sans-serif; 
 }
 
 #sobre p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
+    font-family: 'Lato', sans-serif; 
 }
 
 #cardapio {
@@ -100,6 +107,7 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Inter', sans-serif; 
 }
 
 .cardapio-lista {
@@ -144,12 +152,14 @@ nav ul li a:hover {
 .cardapio-item h3 {
     font-size: 1.5rem;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif; 
 }
 
 .cardapio-item p {
     font-size: 1rem;
     margin-top: 10px;
     color: #555;
+    font-family: 'Lato', sans-serif; 
 }
 
 .cardapio-item span {
@@ -168,6 +178,7 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
+    font-family: 'Inter', sans-serif; /* Fonte específica para h2 */
 }
 
 .beneficio-lista {
@@ -188,11 +199,13 @@ nav ul li a:hover {
 .beneficio-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif; 
 }
 
 .beneficio-item p {
     font-size: 1rem;
     color: #555;
+    font-family: 'Lato', sans-serif; 
 }
 
 #contato {
@@ -204,12 +217,14 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Inter', sans-serif; 
 }
 
 #contato p {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 40px;
+    font-family: 'Lato', sans-serif; 
 }
 
 form {
@@ -260,6 +275,7 @@ footer {
 
 footer p {
     font-size: 1rem;
+    font-family: 'Lato', sans-serif; 
 }
 
 @media (max-width: 768px) {
