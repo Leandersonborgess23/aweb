@@ -40,7 +40,7 @@ nav a {
 }
 
 .banner {
-    background: url('./img/img-mission-background.webp') center/cover no-repeat;
+    background: url('img/img-mission-background.webp') center/cover no-repeat;
     height: 700px;
     display: flex;
     align-items: center;
