@@ -1,11 +1,10 @@
-/* Paleta de cores */
 :root {
     --cor-principal: #8C472E; /* Cor principal */
     --cor-secundaria: #444359; /* Cor secundária */
     --cor-destaque: #F2E4DC; /* Cor de destaque */
 }
 
-/* Estilo global */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +12,13 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Corpo da página */
 body {
     background-color: var(--cor-destaque); 
     color: var(--cor-secundaria); 
     line-height: 1.6;
     padding-top: 60px;
 
-/* Cabeçalho */
+
 header {
     background: var(--cor-principal);
     color: white;
@@ -66,7 +64,6 @@ nav ul li a:hover {
     border-bottom: 2px solid var(--cor-destaque);
 }
 
-/* Seção hero */
 #hero {
     background-color: white;
     border-radius: 8px;
@@ -101,7 +98,6 @@ nav ul li a:hover {
     animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-/* Animação de brilho */
 @keyframes glow {
     0% {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
@@ -165,7 +161,6 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* Seção curiosidades */
 #curiosidades {
     padding: 40px 20px;
     text-align: center;
@@ -178,7 +173,7 @@ nav ul li a:hover {
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: calc(33% - 40px); /* 3 cards por linha */
+    width: calc(33% - 40px); 
     display: inline-block;
     vertical-align: top;
     margin-left: 35px;
@@ -193,7 +188,7 @@ nav ul li a:hover {
 }
 
 .card img:hover {
-    transform: scale(1.1); /* efeito de zoom nas imagens dos cards */
+    transform: scale(1.1); 
 }
 
 .card p {
@@ -204,10 +199,9 @@ nav ul li a:hover {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    filter: brightness(1.1); /* brilho ao passar o mouse */
+    filter: brightness(1.1); 
 }
 
-/* Seção educação */
 #educacao {
     padding: 40px 20px;
     background-color: var(--cor-destaque);
@@ -243,7 +237,6 @@ table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Seção causos */
 #causos {
     padding: 40px 20px;
     text-align: center;
@@ -273,7 +266,6 @@ table tr:nth-child(even) {
     line-height: 1.8;
 }
 
-/* Seção habilidades */
 #habilidades {
     padding: 100px 20px 20px;
     text-align: center;
@@ -335,7 +327,6 @@ table tr:nth-child(even) {
     margin-bottom: 20px;
 }
 
-/* Seção contato */
 #contato {
     padding: 40px 20px;
     background-color: var(--cor-principal); 
