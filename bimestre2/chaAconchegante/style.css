@@ -147,6 +147,17 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
+.cardapio-item img:hover {
+    transform: scale(1.1); 
+}
+
+.cardapio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1); 
+}
+
+
 #beneficios {
     background-color: #e0f7e0;
     padding: 60px 20px;
