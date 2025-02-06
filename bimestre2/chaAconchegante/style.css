@@ -1,50 +1,56 @@
-/* Resetando margens e paddings */
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Corpo da página */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f9f7f1;
-    color: #4d4d4d;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #6b8e23;
+    background-color: #4CAF50;
     color: white;
-    padding: 20px 0;
+    padding: 1rem 0;
     text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+header .logo img {
+    width: 60px;
+    height: auto;
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-/* Navegação */
-nav {
-    text-align: center;
-    margin-top: 10px;
+    font-size: 2rem;
+    margin-top: 50px;
 }
 
 nav ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+    list-style: none;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 nav ul li a:hover {
@@ -53,54 +59,48 @@ nav ul li a:hover {
 
 /* Seção Hero */
 #hero {
-    background-image: url('cha-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
+    background: url('img-locations-background.jpg') no-repeat center center/cover;
     color: white;
+    padding: 80px 0;
+    text-align: center;
 }
 
 #hero h2 {
     font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #hero p {
-    font-size: 1.3rem;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-/* Sobre a Página de Chá */
+/* Seção Sobre */
 #sobre {
     background-color: #fff;
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 #sobre h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: #3e3e3e;
 }
 
 #sobre p {
-    font-size: 1.2rem;
-    max-width: 900px;
+    font-size: 1.1rem;
+    max-width: 800px;
     margin: 0 auto;
-    line-height: 1.8;
 }
 
-/* Cardápio de Chás */
+/* Seção Cardápio */
 #cardapio {
-    background-color: #fafafa;
-    padding: 50px 20px;
+    background-color: #f9f9f9;
+    padding: 60px 20px;
 }
 
 #cardapio h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -109,84 +109,173 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .cardapio-item {
     background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .cardapio-item img {
     width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .cardapio-item h3 {
-    font-size: 1.8rem;
-    margin-top: 15px;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .cardapio-item p {
-    font-size: 1.1rem;
-    margin: 10px 0;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
 }
 
 .cardapio-item span {
-    font-size: 1.3rem;
-    color: #6b8e23;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 15px;
 }
 
-/* Benefícios do Chá */
+.cardapio-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Seção Benefícios */
 #beneficios {
-    background-color: #e0f7fa;
-    padding: 50px 20px;
+    background-color: #e0f7e0;
+    padding: 60px 20px;
 }
 
 #beneficios h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .beneficio-lista {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .beneficio-item {
     background-color: #fff;
     padding: 20px;
-    margin: 10px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
     text-align: center;
 }
 
 .beneficio-item h3 {
-    font-size: 1.8rem;
-    margin-top: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .beneficio-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção Contato */
+#contato {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    text-align: center;
     font-size: 1.1rem;
-    margin: 10px 0;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
 }
 
 /* Rodapé */
 footer {
-    background-color: #6b8e23;
+    background-color: #4CAF50;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 15px 0;
 }
 
 footer p {
     font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cardapio-lista,
+    .beneficio-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardapio-item,
+    .beneficio-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
