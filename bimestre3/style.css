@@ -236,3 +236,116 @@ footer h2 {
 .footer-container a:hover {
     text-decoration: underline;
 }
+
+/* RESPONSIVIDADE PARA DESKTOPS GRANDES (1440 x 1024) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    header {
+        padding: 0 60px;
+    }
+
+    #hero {
+        padding: 120px 60px 0;
+    }
+
+    .hero-container {
+        padding-left: 100px;
+    }
+
+    .hero-container h1 {
+        font-size: 3.5rem;
+    }
+
+    #hero img {
+        width: 450px;
+        height: 450px;
+    }
+
+    #sobre-mim, #curiosidades {
+        padding: 60px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS (1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 0;
+    }
+
+    .hero-container {
+        padding: 20px;
+    }
+
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #sobre-mim, #curiosidades {
+        grid-column: span 12;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS (MOBILE) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 100px 20px 0;
+        text-align: center;
+    }
+
+    .hero-container {
+        padding: 10px;
+    }
+
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+
+    #hero img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
