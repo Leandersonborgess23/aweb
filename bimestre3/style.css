@@ -191,6 +191,12 @@ nav ul li a i {
     font-size: 1rem;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1); 
+}
+
 /* FOOTER */
 footer {
     grid-column: span 12;
@@ -199,6 +205,12 @@ footer {
     text-align: center;
     padding: 40px 20px;
     margin-top: 100px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-container {
@@ -210,14 +222,17 @@ footer {
 
 .footer-container p {
     font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .footer-container a {
-    color: white;
+    color: var(--cor-destaque); 
     text-decoration: none;
-    font-weight: bold;
 }
 
-.footer-container i {
-    margin-right: 8px;
+.footer-container a:hover {
+    text-decoration: underline;
 }
