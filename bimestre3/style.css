@@ -132,30 +132,33 @@ nav ul li a i {
     transform: scale(1.1);
 }
 
-/* SOBRE MIM */
 #sobre-mim {
     grid-column: span 8;
     margin: 100px auto 0;
     padding: 40px;
-    background: var(--cor-fundo);
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.sobre-mim-container{
+    background-color: var(--cor-fundo);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 850px;
+}
 #sobre-mim h2 {
     font-size: 2rem;
     text-align: left;
     color: var(--cor-principal);
 }
 
-#sobre-mim p {
+.sobre-mim-container p {
     font-size: 1.1rem;
     text-align: justify;
     margin-top: 20px;
     color: var(--cor-secundaria);
 }
 
-/* CURIOSIDADES */
 #curiosidades {
     grid-column: span 8;
     margin: 100px auto 0;
@@ -172,7 +175,6 @@ nav ul li a i {
     margin-bottom: 20px;
 }
 
-/* CARDS */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -220,7 +222,6 @@ nav ul li a i {
     filter: brightness(1.1); 
 }
 
-/* FOOTER */
 footer {
     grid-column: span 12;
     background: var(--cor-principal);
