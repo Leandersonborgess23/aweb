@@ -171,19 +171,26 @@ nav ul li a i {
 }
 
 /* CARDS */
-.card-container {
+.cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
     background: white;
     border-radius: 8px;
+    width: calc(50% - 20px);
+    padding: 15px;
+    border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
     overflow: hidden;
     text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .card img {
