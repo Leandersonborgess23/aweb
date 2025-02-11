@@ -79,6 +79,9 @@ nav ul li a i {
     width: 100%;
     padding: 0;
     background: var(--cor-fundo);
+    position: relative; /* Para garantir que o conteúdo fique sobre o cabeçalho */
+    margin-top: -100px; /* Compensa o espaço do cabeçalho fixo */
+    padding-top: 100px; /* Adiciona espaço para o cabeçalho */
 }
 
 .hero-container {
