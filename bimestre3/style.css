@@ -221,9 +221,9 @@ nav ul li a i {
 }
 
 footer {
-    grid-column: span 12;
-    background: var(--cor-principal);
-    color: white;
+    grid-column: 1 / -1;
+    background-color: var(--cor-principal);
+    color: var(--cor-destaque);
     text-align: center;
     padding: 40px 20px;
     margin-top: 100px;
@@ -235,14 +235,14 @@ footer h2 {
     text-align: center;
 }
 
-.footer-container {
+.footer-info {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
 }
 
-.footer-container p {
+.footer p {
     font-size: 1rem;
     max-width: 500px;
     margin: 0 auto;
@@ -250,12 +250,12 @@ footer h2 {
     text-align: justify;
 }
 
-.footer-container a {
-    color: var(--cor-destaque); 
+footer a {
+    color: var(--cor-destaque);
     text-decoration: none;
 }
 
-.footer-container a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
