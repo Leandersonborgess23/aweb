@@ -114,7 +114,7 @@ nav ul li a i {
     }
 }
 
-#hero img {
+.hero-container img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -124,7 +124,7 @@ nav ul li a i {
     transition: transform 0.3s ease;
 }
 
-#hero img:hover {
+.hero-container img:hover {
     transform: scale(1.1);
 }
 
@@ -211,7 +211,7 @@ nav ul li a i {
     padding: 15px;
     font-size: 1rem;
     grid-column: span 4;
-    color: var(--cor-secundaria);
+    color: var(--cor-destaque);
 }
 
 .card:hover {
