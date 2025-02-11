@@ -129,7 +129,8 @@ nav ul li a i {
 }
 
 #sobre-mim {
-    grid-column: span 8;
+    display: grid;
+    grid-column: 3/11;
     margin: 100px auto 0;
     padding: 40px;
 }
@@ -156,7 +157,8 @@ nav ul li a i {
 }
 
 #curiosidades {
-    grid-column: span 8;
+    display: grid;
+    grid-column: 3/11;
     margin: 100px auto 0;
     padding: 40px;
     background: var(--cor-fundo);
