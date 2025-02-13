@@ -262,42 +262,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVIDADE PARA DESKTOPS GRANDES (1440 x 1024) */
-@media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
-
-    header {
-        padding: 0 60px;
-    }
-
-    #hero {
-        padding: 120px 60px 0;
-    }
-
-    .hero-container {
-        padding-left: 100px;
-    }
-
-    .hero-container h1 {
-        font-size: 3.5rem;
-    }
-
-    #hero img {
-        width: 450px;
-        height: 450px;
-    }
-
-    #sobre-mim, #curiosidades {
-        padding: 60px;
-    }
-
-    .card-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 /* RESPONSIVIDADE PARA TELAS MÉDIAS (1024px) */
 @media screen and (max-width: 1024px) {
     header {
