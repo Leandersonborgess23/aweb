@@ -87,11 +87,16 @@ nav ul li a i {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 50px;
     width: 100%;
     padding: 0 20px;
     background-color: var(--cor-secundaria);
+}
+
+.hero-text {
+    flex: 1; /* Ocupa o espaço disponível à esquerda */
+    max-width: 600px; /* Limita a largura do texto */
 }
 
 .hero-container h1 {
@@ -103,6 +108,7 @@ nav ul li a i {
     letter-spacing: 3px;
     text-transform: uppercase;
     animation: glow 1.5s ease-in-out infinite alternate;
+    margin-bottom: 20px;
 }
 
 @keyframes glow {
@@ -115,6 +121,14 @@ nav ul li a i {
     100% {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
     }
+}
+
+.hero-container p {
+    font-size: 1.2rem;
+    color: var(--cor-fundo);
+    line-height: 1.6;
+    margin-top: 30px;
+    max-width: 500px; /* Limita a largura da descrição */
 }
 
 .hero-container img {
