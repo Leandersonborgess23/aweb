@@ -90,7 +90,7 @@ nav ul li a i {
     justify-content: center;
     gap: 30px;
     width: 100%;
-    padding: 0 50px 0 150px;
+    padding: 0 50%;
     background-color: var(--cor-secundaria);
 }
 
