@@ -42,7 +42,7 @@ header {
 
 header h1 {
     font-size: 2rem;
-    color: white;
+    color: var(--cor-fundo);
 }
 
 nav ul {
@@ -57,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--cor-fundo);
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
