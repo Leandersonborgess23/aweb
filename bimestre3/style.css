@@ -43,6 +43,7 @@ header {
 header h1 {
     font-size: 2rem;
     color: var(--cor-fundo);
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul {
@@ -137,6 +138,7 @@ nav ul li a i {
     max-width: 500px; 
     position: relative; 
     left: 30px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 .hero-container img {
@@ -172,6 +174,7 @@ nav ul li a i {
     margin-top: 20px;
     margin-bottom: 20px;
     color: var(--cor-principal);
+    font-family: 'Roboto', sans-serif;
 }
 
 .sobre-mim-container p {
@@ -180,7 +183,8 @@ nav ul li a i {
     max-width: 850px;
     margin: 0 auto;
     color: var(--cor-secundaria);
-    padding: 0 10px;   
+    padding: 0 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #curiosidades {
@@ -198,6 +202,7 @@ nav ul li a i {
     text-align: left;
     color: var(--cor-principal);
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cards-container {
@@ -239,6 +244,7 @@ nav ul li a i {
     font-size: 1rem;
     grid-column: span 4;
     color: var(--cor-destaque);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card:hover {
@@ -266,6 +272,7 @@ footer h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-info {
@@ -281,6 +288,7 @@ footer h2 {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer a {
