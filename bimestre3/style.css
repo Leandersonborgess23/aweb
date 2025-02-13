@@ -227,29 +227,38 @@ footer {
     background-color: var(--cor-principal);
     color: var(--cor-destaque);
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
     margin-top: 100px;
+    height: 200px; /* Altura fixa */
+    width: 100%; /* Largura total */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 footer h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .footer-info {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+    flex-direction: row; /* Itens dispostos horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    max-width: 100%; /* Garante que não ultrapasse a largura do footer */
 }
 
-.footer p {
+.footer-info p, footer a {
     font-size: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.8;
-    text-align: justify;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    gap: 8px; /* Espaçamento entre ícone e texto */
 }
 
 footer a {
@@ -339,5 +348,14 @@ footer a:hover {
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-info {
+        flex-direction: column; /* Altera para layout vertical em telas pequenas */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .footer-info p, footer a {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
     }
 }
