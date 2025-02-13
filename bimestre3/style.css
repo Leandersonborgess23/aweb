@@ -75,28 +75,27 @@ nav ul li a i {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    padding: 0;
+    padding: 100px 40px 0;
     background: var(--cor-fundo);
-    position: relative; /* Para garantir que o conteúdo fique sobre o cabeçalho */
-    margin-top: -100px; /* Compensa o espaço do cabeçalho fixo */
-    padding-top: 100px; /* Adiciona espaço para o cabeçalho */
 }
 
 .hero-container {
+    grid-column: 1 / -1;
+    text-align: left;
+    height: calc(100vh - 115px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex: 1;
+    justify-content: center;
+    gap: 30px;
     width: 100%;
-    max-width: 1400px;  
-    padding: 0 40px; 
+    padding: 0 50px 0 150px;
     background-color: var(--cor-secundaria);
 }
 
 .hero-container h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--cor-principal);
     line-height: 1.2;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.7); 
