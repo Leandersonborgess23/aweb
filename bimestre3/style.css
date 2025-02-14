@@ -138,6 +138,7 @@ nav ul li a i {
 .hero-container p {
     font-size: 2.0rem;
     color: var(--cor-destaque);
+    text-align: justify;
     line-height: 1.6;
     margin-top: 50px;
     max-width: 500px; 
@@ -366,57 +367,55 @@ footer a:hover {
         display: none; 
     }
 
-    /* HERO */
     #hero {
-        grid-column: span 4; /* Ocupa todas as colunas do grid */
-        height: 100vh; /* Altura total da viewport */
-        width: 100%; /* Largura total da viewport */
+        grid-column: span 4;
+        height: 100vh;
+        width: 100%;
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: flex-start; /* Alinha no topo */
-        position: relative; /* Permite que os filhos usem posicionamento absoluto */
-        padding: 0; /* Remove o padding para ocupar toda a altura */
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        padding: 0;
     }
 
     .hero-container {
         height: 100%;
-        width: 100%; /* Garante que ocupe toda a largura */
+        width: 100%; 
         display: flex;
-        flex-direction: column; /* Coloca o texto em coluna */
-        align-items: center; /* Centraliza horizontalmente */
-        position: relative; /* Permite o uso de posicionamento absoluto */
+        flex-direction: column; 
+        align-items: center; 
+        position: relative; 
     }
 
     .hero-container img {
-        width: 200px; /* Tamanho da imagem */
-        height: 200px; /* Tamanho da imagem */
-        border-radius: 50%; /* Bordas arredondadas */
-        position: absolute; /* Permite que a imagem seja posicionada independentemente */
-        top: 40px; /* Distância do topo */
-        left: 80px; /* Centraliza horizontalmente */
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 40px; 
+        left: 80px; 
     }
 
     .hero-text {
-        text-align: center; /* Centraliza o texto */
-        padding-top: 240px; /* Adiciona espaço acima do texto para não sobrepor a imagem */
-        position: relative; /* Permite que o texto seja posicionado em relação ao seu container */
-        width: 100%; /* Garante que o texto ocupe toda a largura */
+        text-align: center;
+        padding-top: 240px;
+        position: relative;
+        width: 100%;
         right: 50px;
     }
 
     .hero-container h1 {
-        font-size: 2rem; /* Reduz o tamanho do título */
+        font-size: 2rem;
         font-family: 'Cinzel', serif;
         top: 40px;
     }
 
     .hero-container p {
-        font-size: 1rem; /* Reduz o tamanho do texto */
+        font-size: 1rem;
         font-family: 'Roboto', sans-serif;
         top: 40px;
     }
 
-    /* SOBRE MIM */
     #sobre-mim {
         grid-column: span 4;
         margin: 100px auto 0;
@@ -424,16 +423,15 @@ footer a:hover {
     }
 
     #sobre-mim h2 {
-        text-align: center; /* Centraliza o título */
+        text-align: center;
         font-family: 'Roboto', sans-serif;
     }
 
     .sobre-mim-container p {
-        text-align: center; /* Centraliza o texto */
+        text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
 
-    /* CURIOSIDADES */
     #curiosidades {
         grid-column: span 4;
         margin: 100px auto 0;
@@ -445,45 +443,44 @@ footer a:hover {
     }
 
     .cards-container {
-        grid-template-columns: 1fr; /* 1 card por linha */
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .card {
-        margin: 0; /* Remove margens laterais */
+        margin: 0;
     }
 
     .card img {
-        height: 150px; /* Reduz a altura da imagem */
+        height: 150px;
     }
 
     .card p {
-        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        font-size: 0.9rem; 
     }
 
-    /* FOOTER */
     footer {
         grid-column: span 4;
         margin-top: 100px;
         padding: 20px;
-        height: auto; /* Altura automática */
+        height: auto; 
     }
 
     footer h2 {
-        font-size: 1.5rem; /* Reduz o tamanho do título */
+        font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
     }
 
     .footer-info {
-        align-items: center; /* Centraliza os itens */
+        align-items: center;
     }
 
     .footer-info p {
-        font-size: 0.9rem; /* Reduz o tamanho do texto */
+        font-size: 0.9rem;
         font-family: 'Open Sans', sans-serif;
     }
 
     footer a {
-        font-size: 1rem; /* Reduz o tamanho dos ícones */
+        font-size: 1rem;
     }
 }
