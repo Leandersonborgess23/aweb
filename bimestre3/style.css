@@ -303,7 +303,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* RESPONSIVIDADE PARA TELAS MÉDIAS (1024px) */
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
