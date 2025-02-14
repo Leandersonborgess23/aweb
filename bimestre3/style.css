@@ -41,15 +41,14 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
-    color: var(--cor-fundo);
-    font-family: 'Roboto', sans-serif;
+    display: none;
 }
 
 .logo img {
-    height: 60px; 
-    width: 60px;
-    border-radius: 30px;
+    height: 80px; 
+    width: 80px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
 }
 
 nav ul {
@@ -137,7 +136,7 @@ nav ul li a i {
 }
 
 .hero-container p {
-    font-size: 1.2rem;
+    font-size: 2.0rem;
     color: var(--cor-destaque);
     line-height: 1.6;
     margin-top: 50px;
