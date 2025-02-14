@@ -369,24 +369,30 @@ footer a:hover {
     .hero-container img {
         width: 200px; /* Reduz o tamanho da imagem */
         height: 200px;
-        margin: 20px auto 0; /* Centraliza a imagem */
+        margin: 20px auto 800px; /* Centraliza a imagem */
         right: 0; /* Remove o posicionamento relativo */
+        border-radius: 50%;
+        top: 20px;
     }
 
     .hero-text {
         text-align: center;
         margin: 0 auto;
+        flex: 1;
+        max-width: 350px; 
         padding: 20px;
     }
 
     .hero-container h1 {
         font-size: 2rem; /* Reduz o tamanho do título */
         left: 0; /* Remove o posicionamento relativo */
+        font-family: 'Cinzel', serif;
     }
 
     .hero-container p {
         font-size: 1rem; /* Reduz o tamanho do texto */
         left: 0; /* Remove o posicionamento relativo */
+        font-family: 'Roboto', sans-serif;
     }
 
     /* SOBRE MIM */
@@ -452,5 +458,4 @@ footer a:hover {
         font-size: 1rem; /* Reduz o tamanho dos ícones */
     }
 }
-
 
