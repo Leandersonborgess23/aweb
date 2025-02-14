@@ -304,222 +304,154 @@ footer a:hover {
 }
 
 /* RESPONSIVIDADE PARA TELAS MÉDIAS (1024px) */
-@media screen and (max-width: 1024px) {
-    header {
-        height: 80px;
-        padding: 0 30px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    #hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 120px 20px 0;
-    }
-
-    .hero-container {
-        padding: 0 20px;
-    }
-
-    .hero-container h1 {
-        font-size: 3rem; 
-    }
-
-    .hero-container img {
-        width: 250px; 
-        height: 250px;
-    }
-
-    #sobre-mim, #curiosidades {
-        grid-column: span 12;
-    }
-
-    .card-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* RESPONSIVIDADE PARA TELAS PEQUENAS (MOBILE) */
 @media screen and (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(4, 1fr); /* 4 colunas no grid */
-        gap: 10px; /* Espaçamento entre as colunas */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    * {
+        font-size: 14px; /* Ajuste geral de fonte para mobile */
     }
 
     /* HEADER */
     header {
-        grid-column: span 4; /* Ocupa 4 colunas */
-        width: 90%; /* Largura de 90% */
-        height: 100px; /* Altura fixa */
+        grid-column: span 4;
+        width: 90%;
+        height: 80px; /* Altura reduzida para mobile */
+        background: var(--cor-principal);
         border-radius: 20px; /* Bordas arredondadas */
-        position: fixed; /* Fixo na base do viewport */
-        bottom: 20px; /* Posicionado 20px acima da base */
-        left: 5%; /* Centralizado horizontalmente */
+        position: fixed;
+        bottom: 10px; /* Fixo na parte inferior */
+        top: auto; /* Remove a posição fixa no topo */
+        left: 5%; /* Centraliza horizontalmente */
+        z-index: 1000;
+        padding: 0 20px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: var(--cor-principal);
-        z-index: 1000; /* Garante que fique acima de outros elementos */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+        justify-content: space-around; /* Distribui os ícones */
     }
-    
+
     header h1 {
-        display: none; /* Oculta o título */
+        display: none; /* Remove o título */
     }
-    
+
     nav ul {
-        display: flex;
-        gap: 20px; /* Espaçamento entre os ícones */
-        padding: 0;
-        margin: 0;
+        gap: 15px; /* Espaçamento entre ícones */
     }
-    
-    nav ul li {
-        list-style: none;
-    }
-    
+
     nav ul li a {
         font-size: 1.5rem; /* Tamanho dos ícones */
         color: var(--cor-fundo);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    
+
     nav ul li a span {
-        display: none; /* Oculta os textos dos links */
+        display: none; /* Remove os textos dos links */
     }
 
     /* HERO */
     #hero {
-        grid-column: span 4; /* Ocupa 4 colunas */
-        height: 100vh; /* Altura do viewport */
+        grid-column: span 4;
+        height: 100vh;
+        padding: 0;
         display: flex;
-        flex-direction: column; /* Layout em coluna */
-        align-items: center;
-        justify-content: flex-start; /* Alinha conteúdo no topo */
-        padding: 20px;
-        background: var(--cor-fundo);
+        flex-direction: column; /* Coloca a imagem acima do texto */
+        justify-content: flex-start; /* Alinha no topo */
     }
-    
+
     .hero-container {
-        display: flex;
-        flex-direction: column; /* Imagem acima, texto abaixo */
-        align-items: center;
-        justify-content: flex-start; /* Alinha conteúdo no topo */
-        height: 100%; /* Ocupa toda a altura do #hero */
-        width: 100%; /* Ocupa toda a largura */
+        flex-direction: column;
+        gap: 20px;
         padding: 0;
     }
-    
+
     .hero-container img {
-        width: 200px; /* Tamanho da imagem ajustado */
+        width: 200px; /* Reduz o tamanho da imagem */
         height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        margin-top: 80px; /* Espaçamento acima da imagem */
+        margin: 20px auto 0; /* Centraliza a imagem */
+        right: 0; /* Remove o posicionamento relativo */
     }
-    
+
     .hero-text {
-        text-align: center; /* Centraliza o texto */
-        margin-top: 40px; /* Espaçamento entre imagem e texto */
-        margin-bottom: 80px; /* Espaçamento abaixo do texto */
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
     }
-    
+
     .hero-container h1 {
-        font-size: 2rem; /* Tamanho do título reduzido */
-        color: var(--cor-principal);
-        line-height: 1.2;
-        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.7);
-        font-family: 'Cinzel', serif;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        animation: glow 1.5s ease-in-out infinite alternate;
-        margin-bottom: 20px; /* Espaçamento abaixo do título */
+        font-size: 2rem; /* Reduz o tamanho do título */
+        left: 0; /* Remove o posicionamento relativo */
     }
-    
+
     .hero-container p {
-        font-size: 1rem; /* Tamanho da descrição reduzido */
-        color: var(--cor-texto);
-        line-height: 1.6;
-        max-width: 90%; /* Largura máxima do texto */
-        margin: 0 auto; /* Centraliza o texto */
+        font-size: 1rem; /* Reduz o tamanho do texto */
+        left: 0; /* Remove o posicionamento relativo */
     }
 
     /* SOBRE MIM */
     #sobre-mim {
-        grid-column: span 4; /* Ocupa 4 colunas */
-        margin-top: 100px; /* Distância de 100px para o hero */
+        grid-column: span 4;
+        margin: 100px auto 0;
         padding: 20px;
-        text-align: center; /* Conteúdo centralizado */
     }
 
     #sobre-mim h2 {
-        font-size: 1.8rem; /* Tamanho do título reduzido */
-        text-align: center; /* Título centralizado */
-        margin-bottom: 20px; /* Espaçamento abaixo do título */
+        text-align: center; /* Centraliza o título */
     }
 
     .sobre-mim-container p {
-        font-size: 1rem; /* Tamanho do texto reduzido */
-        text-align: center; /* Texto centralizado */
+        text-align: center; /* Centraliza o texto */
     }
 
     /* CURIOSIDADES */
     #curiosidades {
-        grid-column: span 4; /* Ocupa 4 colunas */
-        margin-top: 100px; /* Distância de 100px para o sobre mim */
+        grid-column: span 4;
+        margin: 100px auto 0;
         padding: 20px;
     }
 
-    #curiosidades h2 {
-        font-size: 1.8rem; /* Tamanho do título reduzido */
-        text-align: center; /* Título centralizado */
-        margin-bottom: 20px; /* Espaçamento abaixo do título */
-    }
-
     .cards-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 card por linha */
-        gap: 10px; /* Espaçamento entre os cards */
+        grid-template-columns: 1fr; /* 1 card por linha */
+        gap: 20px;
     }
 
     .card {
-        grid-column: span 4; /* Cada card ocupa 4 colunas */
         margin: 0; /* Remove margens laterais */
     }
 
     .card img {
-        height: 150px; /* Altura da imagem reduzida */
+        height: 150px; /* Reduz a altura da imagem */
     }
 
     .card p {
-        font-size: 0.9rem; /* Tamanho do texto reduzido */
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
     }
 
     /* FOOTER */
     footer {
-        grid-column: span 4; /* Ocupa 4 colunas */
-        margin-top: 100px; /* Distância de 100px para o último card */
-        height: 200px; /* Altura fixa */
+        grid-column: span 4;
+        margin-top: 100px;
         padding: 20px;
+        height: auto; /* Altura automática */
     }
 
     footer h2 {
-        font-size: 1.8rem; /* Tamanho do título reduzido */
-        margin-bottom: 20px; /* Espaçamento abaixo do título */
+        font-size: 1.5rem; /* Reduz o tamanho do título */
     }
 
     .footer-info {
-        flex-direction: column; /* Layout vertical */
-        gap: 10px; /* Espaçamento entre os itens */
+        align-items: center; /* Centraliza os itens */
     }
 
-    .footer-info p, footer a {
-        font-size: 0.9rem; /* Tamanho do texto reduzido */
+    .footer-info p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    footer a {
+        font-size: 1rem; /* Reduz o tamanho dos ícones */
     }
 }
+
+
