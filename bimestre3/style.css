@@ -354,32 +354,42 @@ footer a:hover {
         grid-column: span 4; /* Ocupa 4 colunas */
         width: 90%; /* Largura de 90% */
         height: 100px; /* Altura fixa */
-        border-radius: 10px; /* Bordas arredondadas */
+        border-radius: 20px; /* Bordas arredondadas */
         position: fixed; /* Fixo na base do viewport */
-        bottom: 0; /* Posicionado na base */
+        bottom: 20px; /* Posicionado 20px acima da base */
         left: 5%; /* Centralizado horizontalmente */
         display: flex;
         align-items: center;
         justify-content: center;
         background: var(--cor-principal);
         z-index: 1000; /* Garante que fique acima de outros elementos */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
     }
-
+    
     header h1 {
         display: none; /* Oculta o título */
     }
-
+    
     nav ul {
         display: flex;
         gap: 20px; /* Espaçamento entre os ícones */
+        padding: 0;
+        margin: 0;
     }
-
+    
+    nav ul li {
+        list-style: none;
+    }
+    
     nav ul li a {
         font-size: 1.5rem; /* Tamanho dos ícones */
-        color: white;
+        color: var(--cor-fundo);
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
+    
     nav ul li a span {
         display: none; /* Oculta os textos dos links */
     }
@@ -389,28 +399,56 @@ footer a:hover {
         grid-column: span 4; /* Ocupa 4 colunas */
         height: 100vh; /* Altura do viewport */
         display: flex;
-        flex-direction: column; /* Imagem acima, texto abaixo */
+        flex-direction: column; /* Layout em coluna */
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start; /* Alinha conteúdo no topo */
         padding: 20px;
         background: var(--cor-fundo);
     }
-
+    
     .hero-container {
-        flex-direction: column; /* Layout em coluna */
-        text-align: center;
-        gap: 20px; /* Espaçamento entre imagem e texto */
+        display: flex;
+        flex-direction: column; /* Imagem acima, texto abaixo */
+        align-items: center;
+        justify-content: flex-start; /* Alinha conteúdo no topo */
+        height: 100%; /* Ocupa toda a altura do #hero */
+        width: 100%; /* Ocupa toda a largura */
+        padding: 0;
     }
-
+    
+    .hero-container img {
+        width: 200px; /* Tamanho da imagem ajustado */
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 80px; /* Espaçamento acima da imagem */
+    }
+    
+    .hero-text {
+        text-align: center; /* Centraliza o texto */
+        margin-top: 40px; /* Espaçamento entre imagem e texto */
+        margin-bottom: 80px; /* Espaçamento abaixo do texto */
+    }
+    
     .hero-container h1 {
         font-size: 2rem; /* Tamanho do título reduzido */
-        margin-bottom: 10px; /* Espaçamento abaixo do título */
+        color: var(--cor-principal);
+        line-height: 1.2;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.7);
+        font-family: 'Cinzel', serif;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        animation: glow 1.5s ease-in-out infinite alternate;
+        margin-bottom: 20px; /* Espaçamento abaixo do título */
     }
-
-    .hero-container img {
-        width: 150px; /* Tamanho da imagem reduzido */
-        height: 150px;
-        margin-left: 0; /* Remove a margem à esquerda */
+    
+    .hero-container p {
+        font-size: 1rem; /* Tamanho da descrição reduzido */
+        color: var(--cor-texto);
+        line-height: 1.6;
+        max-width: 90%; /* Largura máxima do texto */
+        margin: 0 auto; /* Centraliza o texto */
     }
 
     /* SOBRE MIM */
