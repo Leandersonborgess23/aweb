@@ -404,10 +404,12 @@ footer a:hover {
 
     #sobre-mim h2 {
         text-align: center; /* Centraliza o título */
+        font-family: 'Roboto', sans-serif;
     }
 
     .sobre-mim-container p {
         text-align: center; /* Centraliza o texto */
+        font-family: 'Open Sans', sans-serif;
     }
 
     /* CURIOSIDADES */
@@ -415,6 +417,10 @@ footer a:hover {
         grid-column: span 4;
         margin: 100px auto 0;
         padding: 20px;
+    }
+
+    #curiosidades h2 {
+        font-family: 'Roboto', sans-serif;
     }
 
     .cards-container {
@@ -444,6 +450,7 @@ footer a:hover {
 
     footer h2 {
         font-size: 1.5rem; /* Reduz o tamanho do título */
+        font-family: 'Roboto', sans-serif;
     }
 
     .footer-info {
@@ -452,6 +459,7 @@ footer a:hover {
 
     .footer-info p {
         font-size: 0.9rem; /* Reduz o tamanho do texto */
+        font-family: 'Open Sans', sans-serif;
     }
 
     footer a {
