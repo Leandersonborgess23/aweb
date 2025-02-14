@@ -6,7 +6,6 @@
     --cor-secundaria: #444359; 
     --cor-destaque: #F2E4DC; 
     --cor-fundo: #fff;
-    --cor-texto: #333;
 }
 
 * {
@@ -139,7 +138,7 @@ nav ul li a i {
 
 .hero-container p {
     font-size: 1.2rem;
-    color: var(--cor-fundo);
+    color: var(--cor-destaque);
     line-height: 1.6;
     margin-top: 50px;
     max-width: 500px; 
