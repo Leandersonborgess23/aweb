@@ -313,45 +313,49 @@ footer a:hover {
     }
 
     * {
-        font-size: 14px; /* Ajuste geral de fonte para mobile */
+        font-size: 14px; 
     }
 
-    /* HEADER */
     header {
         grid-column: span 4;
         width: 90%;
-        height: 80px; /* Altura reduzida para mobile */
+        height: 80px; 
         background: var(--cor-principal);
-        border-radius: 20px; /* Bordas arredondadas */
+        border-radius: 20px; 
         position: fixed;
-        bottom: 10px; /* Fixo na parte inferior */
-        top: auto; /* Remove a posição fixa no topo */
-        left: 5%; /* Centraliza horizontalmente */
+        bottom: 10px; 
+        top: auto; 
+        left: 5%; 
         z-index: 1000;
         padding: 0 20px;
         display: flex;
         align-items: center;
-        justify-content: space-around; /* Distribui os ícones */
+        justify-content: space-around; 
     }
 
     header h1 {
-        display: none; /* Remove o título */
+        display: none; 
     }
 
     nav ul {
-        gap: 15px; /* Espaçamento entre ícones */
+        display: flex;
+        gap: 30px; 
+    }
+
+    nav ul li {
+        list-style: none; 
     }
 
     nav ul li a {
-        font-size: 1.5rem; /* Tamanho dos ícones */
+        font-size: 1.5rem; 
         color: var(--cor-fundo);
+        text-decoration: none; 
     }
 
-    nav ul li a span {
-        display: none; /* Remove os textos dos links */
+     .link-text {
+        display: none; 
     }
 
-    /* HERO */
     #hero {
         grid-column: span 4;
         height: 100vh;
@@ -365,6 +369,8 @@ footer a:hover {
         flex-direction: column;
         gap: 20px;
         padding: 0;
+        align-items: center; /* Centraliza o conteúdo */
+        height: 100%; /* Garante que ocupe toda a altura */
     }
 
     .hero-container img {
