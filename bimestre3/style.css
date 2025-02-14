@@ -368,50 +368,54 @@ footer a:hover {
         display: none; 
     }
 
+    /* HERO */
     #hero {
-        grid-column: span 4;
-        height: 100vh;
-        padding: 0;
+        grid-column: span 4; /* Ocupa todas as colunas do grid */
+        height: 100vh; /* Altura total da viewport */
+        width: 100%; /* Largura total da viewport */
         display: flex;
-        flex-direction: column; /* Coloca a imagem acima do texto */
-        justify-content: flex-start; /* Alinha no topo */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: flex-start; /* Alinha no topo */
+        position: relative; /* Permite que os filhos usem posicionamento absoluto */
+        padding: 0; /* Remove o padding para ocupar toda a altura */
     }
 
     .hero-container {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0;
-        align-items: center; /* Centraliza o conteúdo */
-        height: 100%; /* Garante que ocupe toda a altura */
+        height: 100%;
+        width: 100%; /* Garante que ocupe toda a largura */
+        display: flex;
+        flex-direction: column; /* Coloca o texto em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        position: relative; /* Permite o uso de posicionamento absoluto */
     }
 
     .hero-container img {
-        width: 200px; /* Reduz o tamanho da imagem */
-        height: 200px;
-        margin: 20px auto 800px; /* Centraliza a imagem */
-        right: 0; /* Remove o posicionamento relativo */
-        border-radius: 50%;
-        top: 20px;
+        width: 200px; /* Tamanho da imagem */
+        height: 200px; /* Tamanho da imagem */
+        border-radius: 50%; /* Bordas arredondadas */
+        position: absolute; /* Permite que a imagem seja posicionada independentemente */
+        top: 40px; /* Distância do topo */
+        left: 80px; /* Centraliza horizontalmente */
     }
 
     .hero-text {
-        text-align: center;
-        margin: 0 auto;
-        flex: 1;
-        max-width: 350px; 
-        padding: 20px;
+        text-align: center; /* Centraliza o texto */
+        padding-top: 240px; /* Adiciona espaço acima do texto para não sobrepor a imagem */
+        position: relative; /* Permite que o texto seja posicionado em relação ao seu container */
+        width: 100%; /* Garante que o texto ocupe toda a largura */
+        right: 50px;
     }
 
     .hero-container h1 {
         font-size: 2rem; /* Reduz o tamanho do título */
-        left: 0; /* Remove o posicionamento relativo */
         font-family: 'Cinzel', serif;
+        top: 40px;
     }
 
     .hero-container p {
         font-size: 1rem; /* Reduz o tamanho do texto */
-        left: 0; /* Remove o posicionamento relativo */
         font-family: 'Roboto', sans-serif;
+        top: 40px;
     }
 
     /* SOBRE MIM */
